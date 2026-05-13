@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A-Frame Image Texture</title>
+    <!-- Include local A-Frame library -->
+    <script src=" https://aframe.io/releases/1.4.0/aframe.min.js "></script>
+  </head>
+  <body>
+<a-scene>
+  <a-sphere position="0 1.5 -6" radius="1" color="#fbbf24" material="emissive: #fbbf24; emissiveIntensity: 0.5"></a-sphere>
+  <a-entity position="0 1.5 -6" animation="property: rotation; to: 0 360 0; loop: true; dur: 6000; easing: linear">
+    <a-sphere position="3 0 0" radius="0.3" src="https://github.com/NikshepPaliwal/avrnikshep/blob/main/earth_scaled.jpg"
+color="#3b82f6"></a-sphere>
+  
+
+    <a-entity position="3 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing: linear">
+      <a-sphere position="0.6 0 0" radius="0.1" color="#cbd5e1"></a-sphere>
+    </a-entity>
+  </a-entity>
+<a-text 
+        text="value: Basic Solar System"
+        position="0 0.5 -3" 
+        color="black"
+        animation="property: position; to:3 0.5 -3 ; dur: 2000; loop: 	 true; dir: alternate;"
+        align="center">
+</a-text>
+
+  <a-sky color="#B2C7F7"></a-sky>
+</a-scene>
+</body>
+</html>
